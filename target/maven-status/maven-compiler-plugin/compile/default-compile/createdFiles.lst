@@ -1,4 +1,7 @@
-com\test\redis\App.class
 com\test\redis\SwaggerConfig.class
-com\test\redis\controller\TestController.class
 com\test\redis\RedisConfig.class
+com\test\redis\service\RedisService.class
+com\test\redis\entity\Course.class
+com\test\redis\App.class
+com\test\redis\controller\TestController.class
+com\test\redis\entity\Student.class
