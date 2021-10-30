@@ -1,2 +1,3 @@
 com\test\redis\App.class
+com\test\redis\SwaggerConfig.class
 com\test\redis\RedisConfig.class
