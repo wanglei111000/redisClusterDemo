@@ -76,8 +76,15 @@ public class RedisTest {
         course.setCourseNO("001");
         course.setName("舞蹈");
         course.setTeacherNum("T001");
+
+        Course course2 = new Course();
+        course2.setCourseNO("002");
+        course2.setName("游泳");
+        course2.setTeacherNum("T002");
+
         List<Course> courseList = new ArrayList<>();
         courseList.add(course);
+        courseList.add(course2);
         ValueOperations<String, Object > operations = redisTemplate.opsForValue();
         operations.set("courses",courseList);
     }
