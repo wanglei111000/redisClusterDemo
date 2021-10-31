@@ -70,4 +70,25 @@ public class RedisTest {
     }
 
 
+    @Test
+    public void testSaveList() throws Exception{
+        Course course = new Course();
+        course.setCourseNO("001");
+        course.setName("舞蹈");
+        course.setTeacherNum("T001");
+        List<Course> courseList = new ArrayList<>();
+        courseList.add(course);
+        ValueOperations<String, Object > operations = redisTemplate.opsForValue();
+        operations.set("courses",courseList);
+    }
+
+
+    @Test
+    public void testGetList() throws Exception{
+        ValueOperations<String, Object > operations = redisTemplate.opsForValue();
+        List<Course> result = (List<Course>)operations.get("courses");
+        System.out.println(result.get(0));
+    }
+
+
 }

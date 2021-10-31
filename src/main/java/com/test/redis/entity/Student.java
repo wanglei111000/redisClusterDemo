@@ -53,4 +53,15 @@ public class Student implements Serializable {
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", courseList=" + courseList +
+                '}';
+    }
 }
