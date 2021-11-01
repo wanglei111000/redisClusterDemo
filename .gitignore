@@ -1,2 +1,5 @@
 *.iml
-target/*/**
+target/*/**/
+classes/*/**
+*SNAPSHOT.jar.*
+
